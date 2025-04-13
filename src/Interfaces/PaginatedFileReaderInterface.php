@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Interfaces;
+namespace MJohann\Packlib\Interfaces;
 
 interface PaginatedFileReaderInterface
 {

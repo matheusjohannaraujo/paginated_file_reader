@@ -1,25 +1,21 @@
 <?php
 
-require '../vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
-use App\PaginatedFileReader;
+use MJohann\Packlib\PaginatedFileReader;
 
 $reader = new PaginatedFileReader('document.pdf');
-echo "PDF:", PHP_EOL;
-echo "Pages: ", $reader->getTotalPages(), PHP_EOL;
+echo "PDF | NumPages: ", $reader->getTotalPages(), PHP_EOL;
 echo $reader->readPage(0), PHP_EOL, PHP_EOL;
 
 $reader = new PaginatedFileReader('document.docx');
-echo "DOCX:", PHP_EOL;
-echo "Pages: ", $reader->getTotalPages(), PHP_EOL;
+echo "DOCX | NumPages: ", $reader->getTotalPages(), PHP_EOL;
 echo $reader->readPage(0), PHP_EOL, PHP_EOL;
 
 $reader = new PaginatedFileReader('document.odt');
-echo "ODT:", PHP_EOL;
-echo "Pages: ", $reader->getTotalPages(), PHP_EOL;
+echo "ODT | NumPages: ", $reader->getTotalPages(), PHP_EOL;
 echo $reader->readPage(0), PHP_EOL, PHP_EOL;
 
 $reader = new PaginatedFileReader('document.txt');
-echo "TXT:", PHP_EOL;
-echo "Pages: ", $reader->getTotalPages(), PHP_EOL;
+echo "TXT | NumPages: ", $reader->getTotalPages(), PHP_EOL;
 echo $reader->readPage(0), PHP_EOL, PHP_EOL;

@@ -1,11 +1,22 @@
 {
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/"
+    "name": "mjohann/paginated-file-reader",
+    "description": "Um leitor paginado de arquivos como PDF, DOCX, ODT, TXT e MD, com estrutura extensível.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "M. Johann",
+            "email": "matheusjohannaraujo+mjohannpacklib@gmail.com"
         }
-    },
+    ],
     "require": {
+        "php": "^8.0",
         "smalot/pdfparser": "^2.12",
         "phpoffice/phpword": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "MJohann\\Packlib\\": "src/"
+        }
     }
 }

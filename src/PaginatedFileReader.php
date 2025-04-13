@@ -1,12 +1,12 @@
 <?php
 
-namespace App;
+namespace MJohann\Packlib;
 
-use App\Interfaces\PaginatedFileReaderInterface;
-use App\Readers\DocxFileReader;
-use App\Readers\OdtFileReader;
-use App\Readers\PdfFileReader;
-use App\Readers\TextFileReader;
+use MJohann\Packlib\Interfaces\PaginatedFileReaderInterface;
+use MJohann\Packlib\Readers\DocxFileReader;
+use MJohann\Packlib\Readers\OdtFileReader;
+use MJohann\Packlib\Readers\PdfFileReader;
+use MJohann\Packlib\Readers\TextFileReader;
 
 class PaginatedFileReader
 {

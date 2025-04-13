@@ -27,6 +27,38 @@ A PHP library to read files page by page, supporting multiple formats like **TXT
 
 ---
 
+## 🛠️ Installation
+
+1. **Clone the project** or **add it to your project**.
+2. Run Composer to install dependencies and autoload:
+
+```bash
+composer install
+composer require mjohann/paginated-file-reader
+```
+
+---
+
+## ✅ Usage
+
+```php
+<?php
+
+require 'vendor/autoload.php';
+
+use MJohann\Packlib\PaginatedFileReader;
+
+$reader = new PaginatedFileReader('path/to/your/file.pdf');
+
+// Read page 0
+echo $reader->readPage(0);
+
+// Get total pages
+echo $reader->getTotalPages();
+```
+
+---
+
 ## 🧱 Project Structure
 
 ```
@@ -42,36 +74,4 @@ project/
 │   └── PaginatedFileReader.php
 ├── vendor/
 ├── composer.json
-```
-
----
-
-## 🛠️ Installation
-
-1. **Clone the project** or add it to your project.
-2. Run Composer to install dependencies and autoload:
-
-```bash
-composer install
-composer dump-autoload
-```
-
----
-
-## ✅ Usage
-
-```php
-<?php
-
-require 'vendor/autoload.php';
-
-use App\PaginatedFileReader;
-
-$reader = new PaginatedFileReader('path/to/your/file.pdf');
-
-// Read page 0
-echo $reader->readPage(0);
-
-// Get total pages
-echo $reader->getTotalPages();
 ```

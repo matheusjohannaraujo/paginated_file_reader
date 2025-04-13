@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Readers;
+namespace MJohann\Packlib\Readers;
 
-use App\Interfaces\PaginatedFileReaderInterface;
+use MJohann\Packlib\Interfaces\PaginatedFileReaderInterface;
 use Smalot\PdfParser\Parser as PdfParser;
 
 class PdfFileReader implements PaginatedFileReaderInterface

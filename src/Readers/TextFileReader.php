@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Readers;
+namespace MJohann\Packlib\Readers;
 
-use App\Interfaces\PaginatedFileReaderInterface;
+use MJohann\Packlib\Interfaces\PaginatedFileReaderInterface;
 
 class TextFileReader implements PaginatedFileReaderInterface
 {
