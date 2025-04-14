@@ -3,7 +3,17 @@
 
 A PHP library to read files page by page, supporting multiple formats like **TXT**, **PDF**, **DOCX**, and **ODT**. Each file type is handled by a dedicated reader class, all following a unified interface for seamless integration.
 
----
+## 📦 Installation
+
+You can install the library via Composer:
+
+```bash
+composer require mjohann/paginated-file-reader
+```
+
+## ⚙️ Requirements
+
+- PHP 8.0 or higher
 
 ## 🚀 Features
 
@@ -16,21 +26,7 @@ A PHP library to read files page by page, supporting multiple formats like **TXT
 - Easily extendable for other file types
 - Unified interface for all readers
 
----
-
-## 🛠️ Installation
-
-1. **Clone the project** or **add it to your project**.
-2. Run Composer to install dependencies and autoload:
-
-```bash
-composer install
-composer require mjohann/paginated-file-reader
-```
-
----
-
-## ✅ Usage Example
+## 🧪 Usage Example
 
 ```php
 <?php
@@ -48,9 +44,9 @@ echo $reader->readPage(0);
 echo $reader->getTotalPages();
 ```
 
----
+For more examples, see the [`example/script.php`](example/script.php) file in the repository.
 
-## 🧱 Project Structure
+## 📁 Project Structure
 
 ```
 project/
