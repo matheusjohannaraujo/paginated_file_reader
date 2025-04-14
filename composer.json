@@ -1,6 +1,6 @@
 {
     "name": "mjohann/paginated-file-reader",
-    "description": "Um leitor paginado de arquivos como PDF, DOCX, ODT, TXT e MD, com estrutura extensível.",
+    "description": "A PHP library to read files page by page, supporting multiple formats like TXT, PDF, DOCX, and ODT. Each file type is handled by a dedicated reader class, all following a unified interface for seamless integration.",
     "type": "library",
     "license": "MIT",
     "authors": [
