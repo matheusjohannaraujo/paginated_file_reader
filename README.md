@@ -63,6 +63,8 @@ project/
 │   │   ├── DocxFileReader.php
 │   │   └── OdtFileReader.php
 │   └── PaginatedFileReader.php
+├── example/
+│   └── script.php
 ├── composer.json
 ├── .gitignore
 ├── LICENSE
