@@ -1,15 +1,6 @@
 
 # [📄 Paginated File Reader](https://github.com/matheusjohannaraujo/paginated_file_reader)
 
-```php
-const DEVELOPER_INFO = [
-    "autor" => "Matheus Johann Araújo",
-    "country" => "Brasil",
-    "state" => "Pernambuco",
-    "date" => "2025-04-13"
-];
-```
-
 A PHP library to read files page by page, supporting multiple formats like **TXT**, **PDF**, **DOCX**, and **ODT**. Each file type is handled by a dedicated reader class, all following a unified interface for seamless integration.
 
 ---
@@ -39,7 +30,7 @@ composer require mjohann/paginated-file-reader
 
 ---
 
-## ✅ Usage
+## ✅ Usage Example
 
 ```php
 <?php
@@ -72,6 +63,16 @@ project/
 │   │   ├── DocxFileReader.php
 │   │   └── OdtFileReader.php
 │   └── PaginatedFileReader.php
-├── vendor/
 ├── composer.json
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## 👨‍💻 Author
+
+Developed by [Matheus Johann Araújo](https://github.com/matheusjohannaraujo) – Pernambuco, Brazil.
